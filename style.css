@@ -420,12 +420,12 @@ main .left a:hover{
     }
 
     .hero {
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
 
     .service {
         height: auto;
-        margin: 25rem 5rem 5rem 5rem;
+        margin: 5rem;
     }
 
     .project .work .extra {
@@ -557,14 +557,34 @@ main .left a:hover{
 
 /* ========================== */
 @media screen and (max-width: 590px){
-    
+    .navigation {
+        position: fixed;
+        top: 0;
+    }
+
+    body {
+        width: 100%;
+    }
     .aboutSection, .service  {
         margin-top: 1.5rem;
     }
 
+    .about p {
+        text-align: left;
+    }
     
     .aboutSection h3, .service h3, .contact {
-        margin-bottom: 1rem;
+        margin-bottom: .1rem;
+    }
+
+    .service {
+        width: 80%;
+        text-align: left;
+    }
+
+    .service ol, .service p, .service h3 {
+        /* border: 2px solid; */
+        margin-right: 10rem;
     }
 
     .exp {
@@ -579,7 +599,6 @@ main .left a:hover{
     .project .work {
         width: 100%;
         display: flex;
-        /* border: 1px solid; */
     }
 
     .project .work .extra img {
@@ -592,7 +611,6 @@ main .left a:hover{
         width: 150px;
         height: 100px;
         cursor: pointer;
-        /* margin-top: 1rem; */
         margin-bottom: 4rem;
         opacity: 0.3;
         transition: all 1000ms ease;
@@ -603,16 +621,17 @@ main .left a:hover{
     }
 
     .project .work .extra {
-        width: 190px;
+        width: 110px;
         height: auto;
         font-size: 15px;
         background-color: transparent;
         padding: .1rem;
         text-align: left;
-        left: 17rem;
+        left: 15rem;
     }
 
     .project .work .extra p {
+        font-size: 7px;
         line-height: .8rem;
     }
 
@@ -640,5 +659,203 @@ main .left a:hover{
         -webkit-animation: loadOne 6s normal forwards;
     }
     
+    .exp h3 {
+        font-size: .9rem;
+    }
+
+    .exp .textMuted {
+        font-size:.8rem;
+    }
+}
+
+/* ======================== */
+@media screen and (max-width: 400px){
+    body {
+        width: 100%;
+        background: bisque;
+        color: black;
+    }
+    a:link, 
+    a:visited, 
+    a:active {
+    color: brown;
+    }
+
+    .navigation {
+        background-color: antiquewhite;
+    }
+    .textMuted {
+        color: brown;
+    }
+    .textBold {
+        color: #0a192f;
+    }
+    .navigation {
+        position: fixed;
+        top: 0;
+    }
+    
+    .heroSection {
+        padding: 0;
+        margin-top: -10rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    .aboutSection {
+        padding: 0;
+        border: 2px solid brown;
+    }
+
+    .aboutContainerRight img {
+        opacity: 1;
+        border: 2px solid brown;
+    }
+
+    .service {
+        padding: 0 .4rem;
+        margin: 0 auto;
+        color: black;
+        font-size: 1rem;
+        border: 2px solid;
+    }
+
+    .service h3 {
+        text-align: center;
+    }
+    .project {
+        padding: 0;
+        border: 2px solid black;
+    }
+
+    .exp {
+        color: black;
+        padding: 0;
+        border: 2px solid black;
+        margin-bottom: 2rem;
+    }
+
+    .project .work {
+        width: 80%;
+        display: flex;
+    }
+
+    .project .work .extra img {
+        width: 15px;
+        height: 15px;
+        border: none;
+    }
+
+    .project .work .dltSocial img {
+        width: 130px;
+        height: 100px;
+        cursor: pointer;
+        margin-bottom: 4rem;
+        margin-right: 3rem;
+        opacity: 1;
+        transition: all 1000ms ease;
+        -webkit-transition: all 1000ms ease;
+        -moz-transition: all 1000ms ease;
+        -ms-transition: all 1000ms ease;
+        -o-transition: all 1000ms ease;
+    }
+
+    .project .work .extra {
+        color: black;
+        width: 110px;
+        height: auto;
+        /* background-color: brown; */
+        padding: .1rem;
+        text-align: left;
+        left: 14rem;
+    }
+
+    .project .work .extra p {
+        font-size: 12px;
+    }
+
+    .experience .skill p {
+        color: black;
+    }
+    .progress {
+        background: #000;
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        display: flex;
+        width: 120px;
+        border: 1px solid rgb(137, 128, 128);
+    }
+      
+    .progress-value {
+        animation: loadOne 6s normal forwards;
+        border-radius: 100px;
+        background-image: conic-gradient(#7cfb7c, red);
+        height: 5px;
+        width: 0;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+        -webkit-animation: loadOne 6s normal forwards;
+    }
+
+
+    .two {
+    animation: loadTwo 6s normal forwards;
+    -webkit-animation: loadTwo 6s normal forwards;
+    }
+
+    .five {
+    animation: loadFive 6s normal forwards;
+    -webkit-animation: loadFive 6s normal forwards;
+    }
+  
+    @keyframes loadOne {
+    0% { width: 0; }
+    100% { width: 90%; }
+    }
+  
+    @keyframes loadTwo {
+    0% { width: 0; }
+    100% { width: 70%; }
+    }   
+  
+    @keyframes loadFive {
+    0% { width: 0; }
+    100% { width: 3%; }
+    }
+
+    
+    .exp h3 {
+        font-size: .9rem;
+    }
+
+    .exp .textMuted {
+        font-size:.8rem;
+    }
+
+    .contact {
+        padding: 0;
+    }
+
+    .contact .textBold, .contact p {
+        text-align: left;
+    }
+
+    .contact .btn {
+        background: brown;
+        border: none;
+        color: wheat;
+    }
+    .contact .btn input{
+        background: brown;
+        border: none;
+        color: wheat;
+    }
 
 }
