@@ -707,25 +707,45 @@ main .left a:hover{
 
     .aboutSection {
         padding: 0;
-        /* border: 2px solid brown; */
     }
 
     .aboutContainerRight img {
         opacity: 1;
         border: 2px solid brown;
-    }
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
 
     .service {
-        padding: 0 .4rem;
-        margin: 0 auto;
+        width: 70%;
+        padding: .6rem;
+        /* margin: 0; */
         color: black;
         font-size: 1rem;
         /* border: 2px solid; */
     }
 
+    .service ol {
+        width: 100%;
+        text-align: center;
+        /* border: 2px solid; */
+        margin: 5px 0;
+    }
+
+    .service p {
+        width: 100%;
+        margin: 0;
+        /* text-align: center; */
+    }
+
     .service h3 {
         text-align: center;
+        margin: 0px 5rem 5px 0px;
     }
+
     .project {
         padding: 0;
         /* border: 2px solid black; */
@@ -856,6 +876,10 @@ main .left a:hover{
         background: brown;
         border: none;
         color: wheat;
+    }
+
+    .contact textarea {
+        margin-top: -1.4rem;
     }
 
 }
