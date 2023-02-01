@@ -707,7 +707,7 @@ main .left a:hover{
 
     .aboutSection {
         padding: 0;
-        border: 2px solid brown;
+        /* border: 2px solid brown; */
     }
 
     .aboutContainerRight img {
@@ -720,7 +720,7 @@ main .left a:hover{
         margin: 0 auto;
         color: black;
         font-size: 1rem;
-        border: 2px solid;
+        /* border: 2px solid; */
     }
 
     .service h3 {
@@ -728,13 +728,13 @@ main .left a:hover{
     }
     .project {
         padding: 0;
-        border: 2px solid black;
+        /* border: 2px solid black; */
     }
 
     .exp {
         color: black;
         padding: 0;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         margin-bottom: 2rem;
     }
 
