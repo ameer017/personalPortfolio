@@ -723,8 +723,10 @@ main .left a:hover{
     }
 
     .aboutContainerLeft p {
+        width: 100%;
         font-size: 1rem;
-        line-height: 1.4rem;
+        line-height: 1.3rem;
+        /* border: 2px solid; */
     }
 
     .aboutContainerRight img {
@@ -897,7 +899,6 @@ main .left a:hover{
     }
     
     .contact .btn input, .navigation .btn a{
-        background: brown;
         border: none;
         color: wheat;
     }
