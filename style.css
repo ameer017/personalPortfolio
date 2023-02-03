@@ -52,6 +52,17 @@ a:active {
     background-color: #555e5d;
 }
 
+.textMuted {
+    font-size: 16px;
+    color: #64ffda;
+    margin: 0px 0px 20px 4px;
+}
+
+.textBold {
+    font-size: 50px;
+    color: #ccd6f6;
+}
+
 /* navbar styling */
 .navigation {
     width: 100%;
@@ -99,16 +110,6 @@ a:active {
     border-bottom-left-radius: 30px;
 }
 
-.textMuted {
-    font-size: 16px;
-    color: #64ffda;
-    margin: 0px 0px 20px 4px;
-}
-
-.textBold {
-    font-size: 50px;
-    color: #ccd6f6;
-}
 
 /* Hero section */
 .heroSection {
@@ -173,6 +174,7 @@ a:active {
     -o-transition: all 1000ms ease;
 }
 
+
 /* Service */
 .service {
     color: #0a192f;
@@ -203,8 +205,8 @@ a:active {
     text-align: left;
 }
 
-/* Project Section */
 
+/* Project Section */
 .project .work {
     display: flex;
     justify-content: center;
@@ -309,6 +311,10 @@ a:active {
     display: flex;
     width: 350px;
     border: 1px solid rgb(137, 128, 128);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
 }
   
 .progress-value {
@@ -375,6 +381,7 @@ a:active {
 .contact textarea {
     margin-top: -1rem;
 }
+
 .contact .platform {
     margin: 0 auto;
     display: grid;
@@ -383,6 +390,7 @@ a:active {
 }
 
 .contact .btn {
+    cursor: pointer;
     margin: 1rem auto;
     height: 3rem;
 }
@@ -390,6 +398,7 @@ a:active {
 .contact .btn input {
     background: none;
     color: #64ffda;
+    cursor: pointer;
 }
 
 
@@ -414,6 +423,7 @@ main .left a:hover{
     -ms-transition: all 1000ms ease-in;
     -o-transition: all 1000ms ease-in;
 }
+
 
 /* footer */
 
@@ -443,7 +453,7 @@ main .left a:hover{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
 
     .service {
         width: 80%;
@@ -587,7 +597,7 @@ main .left a:hover{
         -moz-transition: all 1000ms ease;
         -ms-transition: all 1000ms ease;
         -o-transition: all 1000ms ease;
-}
+    }
 
     .project .work .extra {
         width: 38%;
@@ -620,7 +630,7 @@ main .left a:hover{
         -moz-transition: all 1000ms ease-in;
         -ms-transition: all 1000ms ease-in;
         -o-transition: all 1000ms ease-in;
-}
+    }
 
 }
 
@@ -635,6 +645,7 @@ main .left a:hover{
     .hero {
         margin-top: -5rem;
     }
+    
     body {
         width: 100%;
     }
@@ -741,6 +752,7 @@ main .left a:hover{
     }
 }
 
+
 /* ======================== */
 @media screen and (max-width: 460px){
     body {
@@ -748,6 +760,7 @@ main .left a:hover{
         background: bisque;
         color: black;
     }
+
     a:link, 
     a:visited, 
     a:active {
@@ -757,12 +770,15 @@ main .left a:hover{
     .navigation {
         background-color: antiquewhite;
     }
+
     .textMuted {
         color: brown;
     }
+
     .textBold {
         color: #0a192f;
     }
+
     .navigation {
         position: fixed;
         top: 0;
@@ -871,6 +887,7 @@ main .left a:hover{
     .experience .skill p {
         color: black;
     }
+
     .progress {
         background: #000;
         justify-content: flex-start;
