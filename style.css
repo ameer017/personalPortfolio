@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&display=swap');
+
 /* General styling */
 * {
     padding: 0;
@@ -17,7 +18,7 @@ body {
 }
 
 .container {
-    padding: 3.5rem 2.5rem;
+    padding: 2rem 2.5rem;
     margin: 4rem;
 }
 
@@ -113,30 +114,30 @@ a:active {
 
 /* Hero section */
 .heroSection {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    margin: 2rem 0 2rem 12rem;
+    padding-bottom: -10px;
 }
 
 .hero p {
     margin-top: 2rem;
+    margin-bottom: 3rem;
     line-height: 1.5;
-    letter-spacing: 1;
+    letter-spacing: 1.4;
 }
+
+.heroSection .btn {
+    margin: 1.5rem 0 0 3rem;
+}
+
 
 /* about section */
-
-.aboutSection {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
 .aboutSection h3, .service h3, .project h3 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .about {
@@ -145,15 +146,12 @@ a:active {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    gap: 1rem;
 }
 
 .aboutContainerLeft p {
-    width: 60%;
+    width: 90%;
     line-height: 2;
-    margin: 0 auto;
-}
-
-.aboutContainerRight {
     margin: 0 auto;
 }
 
@@ -355,8 +353,6 @@ a:active {
     100% { width: 3%; }
 }
 
-
-
 /* Contact Section */
 .contact {
     display: flex;
@@ -370,6 +366,7 @@ a:active {
     padding: .6rem 1rem;
     border: none;
     outline: none;
+    font-size: 1.5rem;
     margin: .5rem;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -406,7 +403,7 @@ a:active {
 main .left {
     text-align: center;
     position: fixed;
-    opacity: 0.8;  
+    opacity: 0.6;  
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
@@ -415,7 +412,7 @@ main .left {
 }
 
 main .left a:hover{
-    color: #a2f3e0;
+    color: #fff;
     opacity: 1;
     transition: all 1000ms ease-in;
     -webkit-transition: all 1000ms ease-in;
@@ -439,10 +436,11 @@ main .left a:hover{
 @media screen and (max-width: 1200px) {
     .aboutSection {
         padding: 0;
+        margin-top: 1rem;
     }
 
     .aboutContainerLeft p {
-        padding: 0;
+        padding: 1.2rem;
     }
 
     .aboutContainerRight img {
@@ -475,7 +473,6 @@ main .left a:hover{
 
     .about {
         flex-direction: column;
-
     }
 
     .aboutContainerLeft {
@@ -494,8 +491,7 @@ main .left a:hover{
     }
 
     .service {
-        margin-top: 18rem;
-        padding-top: 10rem;
+        margin-top: 5rem;
         color: #ccd6f6;
         background: none;
     }
@@ -512,8 +508,7 @@ main .left a:hover{
     }
 
     .project {
-        margin-top: 6rem;
-        padding-top: 10rem;
+        margin-top: 5rem;
     }
 
     .experience {
@@ -535,6 +530,9 @@ main .left a:hover{
         margin: 1rem;
     }
     
+    .contact input, textarea {
+        font-size: 1.1rem;
+    }
 
 }
 
@@ -544,9 +542,14 @@ main .left a:hover{
         position: relative;
     }
 
+    .heroSection {
+        margin: 0 auto;
+        text-align: left;
+    }
+
     .hero {
-        margin-top: -10rem;
-        text-align: center;
+        text-align: left;
+        padding-left: 9rem;
     }
 
     .hero .textBold {
@@ -554,13 +557,15 @@ main .left a:hover{
     }
 
     .service {
-        margin-top: -2rem;
+        margin-top: -7rem;
         text-align: center;
+        margin-bottom: -9rem;
     }
 
     .aboutSection {
         height: auto;
-        margin-top: -8rem;
+        margin-top: 2rem;
+        padding-bottom: 7rem;
     }
 
     .aboutSection h3 {
@@ -580,6 +585,10 @@ main .left a:hover{
         margin-top: 2rem;
         width: 150px;
         height: 150px;
+    }
+
+    .service {
+        margin-bottom: 2rem;
     }
 
     .project .work .dltSocial img {
@@ -639,13 +648,22 @@ main .left a:hover{
         top: 0;
     }
 
+    .heroSection {
+        margin-top: 7rem;
+        margin-bottom: 4.5rem;
+        
+    }
+
     .hero {
-        margin-top: -5rem;
+        padding: 1rem;
+        margin: 0 auto;
+        text-align: center;
     }
-    
-    body {
-        width: 100%;
+
+    .hero .btn {
+        margin: 0 auto;
     }
+
 
     .aboutSection {
         padding: 0;
@@ -656,15 +674,15 @@ main .left a:hover{
     }
 
     .aboutSection, .service  {
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
     }
 
     .about p {
-        text-align: left;
+        text-align: center;
     }
     
     .aboutSection h3, .service h3, .contact {
-        margin-bottom: .1rem;
+        margin-bottom: .3rem;
     }
 
     .service {
@@ -679,6 +697,7 @@ main .left a:hover{
     .aboutContainerRight img {
         width: 100px;
         height: 100px;
+        margin: 0 auto;
     }
 
     .project .work {
@@ -708,9 +727,8 @@ main .left a:hover{
     .project .work .extra {
         width: 110px;
         height: auto;
-        font-size: 15px;
-        background-color: transparent;
-        padding: .1rem;
+        font-size: 20px;
+        background-color: #555e5d;
         text-align: left;
         left: 15rem;
     }
@@ -744,8 +762,50 @@ main .left a:hover{
         -webkit-animation: loadOne 6s normal forwards;
     }
 
+    .two {
+        animation: loadTwo 6s normal forwards;
+        -webkit-animation: loadTwo 6s normal forwards;
+        }
+    
+        .five {
+        animation: loadFive 6s normal forwards;
+        -webkit-animation: loadFive 6s normal forwards;
+        }
+      
+        @keyframes loadOne {
+        0% { width: 0; }
+        100% { width: 90%; }
+        }
+      
+        @keyframes loadTwo {
+        0% { width: 0; }
+        100% { width: 70%; }
+        }   
+      
+        @keyframes loadFive {
+        0% { width: 0; }
+        100% { width: 3%; }
+        }
+
     .exp .textMuted {
         font-size:.8rem;
+    }
+
+    .contact .textBold {
+        font-size: 2rem;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    .contact input, textarea {
+        width: 80%;
+        margin: 4px auto;
+    }
+
+    .contact textarea {
+        height: 7rem;
     }
 }
 
@@ -788,11 +848,27 @@ main .left a:hover{
 
     .hero {
         text-align: left;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero .btn a {
+        color: wheat;
     }
 
     .aboutSection {
-        padding: 0;
-        margin-top: -4rem;
+        padding: 1rem;
+        margin-top: -10rem;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        box-shadow: 0px 1rem 2rem chocolate;
+    }
+
+    .aboutSection h3 {
+        padding-bottom: 2rem;
     }
 
     .aboutContainerLeft p {
@@ -803,7 +879,8 @@ main .left a:hover{
 
     .aboutContainerRight img {
         opacity: 1;
-        border: 2px solid brown;
+        margin: 0 auto;
+        border: 1px dashed brown;
         border-radius: 15px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
@@ -831,10 +908,6 @@ main .left a:hover{
     .service h3 {
         text-align: center;
         margin: 0px 5rem 5px 0px;
-    }
-
-    .project {
-        padding: 0;
     }
 
     .exp {
@@ -875,6 +948,7 @@ main .left a:hover{
         padding: .1rem;
         text-align: left;
         left: 15rem;
+        background: transparent;
     }
 
     .project .work .extra p {
@@ -977,6 +1051,11 @@ main .left a:hover{
 
     .contact textarea {
         margin-top: -1.4rem;
+        height: 6rem;
+    }
+
+    .contact p {
+        text-align: center;
     }
 
 }
